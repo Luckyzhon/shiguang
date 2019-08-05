@@ -1,8 +1,5 @@
 <template>
-<div id="app">
-  <router-view></router-view>
-</div>
-  
+    <h1>用户</h1>
 </template>
 
 <script>

@@ -1,8 +1,5 @@
 <template>
-<div id="app">
-  <router-view></router-view>
-</div>
-  
+    <h1>修改密码</h1>
 </template>
 
 <script>

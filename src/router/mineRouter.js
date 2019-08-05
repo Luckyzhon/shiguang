@@ -1,0 +1,33 @@
+export default{
+    path:'/mine',
+    component:()=>import('../pages/mine/mine'),
+    children:[
+        {
+            path:'mineinfo',
+            component:()=>import('../pages/mine/myinfo/myinfo')
+        },
+        {
+            path:'news',
+            component:()=>import('../pages/mine/news/news')
+        },
+        {
+            path:'detail',
+            component:()=>import('../pages/common/Detail/foodDetail')
+        },
+        {
+            path:'set',
+            component:()=>import('../pages/mine/set/set'),
+            children:[
+                {
+                    path:'changepassword',
+                    component:()=>import('../pages/mine/set/children/changepassword')
+                },
+                {
+                    path:'cancel',
+                    component:()=>import('../pages/mine/set/children/cancel')
+                }
+            ]
+        }
+
+    ]
+}
