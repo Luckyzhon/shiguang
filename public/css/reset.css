@@ -1,0 +1,48 @@
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select,figure,figcaption,footer,select{
+	margin:0;
+    padding:0;	
+
+}
+body,html{
+	font:12px "微软雅黑",Arial;
+	color:#000;	
+	height: 100%;
+}
+h1,h2,h3,h4,h5,h6,b,strong{
+	font-weight:normal;	
+}
+i,em{
+	font-style:normal;	
+}
+li{
+	list-style:none;	
+}
+a{
+	text-decoration:none;
+	color:#323232;	
+}
+a:hover{
+	
+}
+input{
+	outline:none;	
+	border: 0;
+}
+img{
+	border:0;	
+}
+input::-webkit-input-placeholder{
+    color:#b3edd4;
+}
+/* 万能清除浮动法 */
+.clearfix{
+	zoom:1;	
+}
+.clearfix:after{
+	content:'';
+	display:block;
+	height:0;
+	clear:both;
+	overflow:hidden;
+	visibility:hidden;
+}
