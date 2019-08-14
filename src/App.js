@@ -94,7 +94,8 @@ const AppPanel = () =>{
                 <Route path='/mine/setting' component={Setting}/>
                 <Route path='/mine/setting/changepassword' component={Changepassword}/>
                 <Route path='/mine/setting/cancel' component={Cancel}/>
-                {/* <Tarbar/>  未配置页面 */}
+                {/* 未配置页面 */}
+                <Tarbar/>  
             </div>
         </Router>
     )
