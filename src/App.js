@@ -8,7 +8,6 @@ import Loading from './pages/common/Loading/Loading';
 
 //root
 const Home = lazy(()=>import('./pages/home/Home/Home'));
-const Search = lazy(()=>import('./pages/search/menu/menu'));
 const Article = lazy(()=>import('./pages/article/Article/article'));
 const Mine = lazy(()=>import('./pages/mine/mine'));
 const Login = lazy(()=>import('./pages/common/Login/Login'));
@@ -22,12 +21,11 @@ const Share = lazy(()=>import('./pages/common/Share/share'));
 const NotFind = lazy(()=>import('./pages/common/NotFind/NotFind'));
 
 //first children page
-const Baike = lazy(()=>import('./pages/search/baike/baike'));
-const User = lazy(()=>import('./pages/search/user/user'))
+const Search = lazy(()=>import('./pages/search/Search'));
+
 
 //second children page
-const MenuList = lazy(()=>import('./pages/search/menu/children/menulist'))
-const BaikeDetail = lazy(()=>import('./pages/search/baike/children/baikeDetail'));
+
 const ArticleDetail = lazy(()=>import('./pages/article/Article/children/articleDetail'));
 const Myinfo = lazy(()=>import('./pages/mine/myinfo/myinfo'));
 const News = lazy(()=>import('./pages/mine/news/news'));
@@ -36,6 +34,9 @@ const Setting = lazy(()=>import('./pages/mine/setting/setting'));
 //third children page
 const Cancel = lazy(()=>import('./pages/mine/setting/children/cancel'));
 const Changepassword = lazy(()=>import('./pages/mine/setting/children/changepassword'));
+
+//this is footer Navtive
+const Tarbar = lazy(()=>import('./pages/common/TabBar/Tabbar'));
 
 const AppPanel = () =>{
     return(
@@ -47,7 +48,7 @@ const AppPanel = () =>{
                         return <Redirect to="/home"/>
                     }}/>
                     <Route path='/home' exact component={Home} />
-                    <Route path='/menu' exact component={Search} />
+                    <Route path='/search/:id' exact component={Search} />
                     <Route path='/article' exact component={Article} />
                     <Route path='/mine' exact component={Mine} />
                     <Route path='/login' exact component={Login}/>
@@ -64,20 +65,12 @@ const AppPanel = () =>{
 
                 {/* 发现 */}
                 {/* 菜谱 */}
-                <Route path='/menu/menulist' component={MenuList}/>
+                <Route path='/menu/:id' component={Search}/>
                 {/* 菜谱子路由 */}
-                <Route path='/menu/menulist/foodDetail' component={FoodDetail}/>
-                <Route path='/menu/menulist/foodDetail/share' component={Share}/>
-                <Route path='/menu/menulist/foodDetail/collect' component={Collect}/>
+             
 
-                <Route path='/menu/menulist/userDetail' component={UserDetail}/>
-                <Route path='/menu/menulist/screen' component={Screen}/>
-                {/* 百科 */}
-                <Route path='/menu/baike' component={Baike}/>
-                <Route path='/menu/baike/baikedetail' component={BaikeDetail}/>
-                {/* 用户 */}
-                <Route path='/menu/user' component={User}/>
-                <Route path='/menu/user/userdetail' component={UserDetail}/>
+
+ 
 
                 {/* 文章 */}
                 {/* 文章内容 */}
@@ -95,7 +88,8 @@ const AppPanel = () =>{
                 <Route path='/mine/setting/changepassword' component={Changepassword}/>
                 <Route path='/mine/setting/cancel' component={Cancel}/>
                 {/* 未配置页面 */}
-                <Tarbar/>  111
+                
+                <Tarbar/>
             </div>
         </Router>
     )

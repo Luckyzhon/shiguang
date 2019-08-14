@@ -1,0 +1,15 @@
+#footer {
+  .tabbar {
+    width: 100%;
+    height: .49rem;
+    background: rgba(255, 255, 255, 1);
+    border: .01rem solid rgba(226, 226, 226, 1);
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding:.05rem 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+}
