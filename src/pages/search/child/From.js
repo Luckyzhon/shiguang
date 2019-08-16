@@ -5,7 +5,7 @@ class From extends Component {
         return (
             <div className="search-from">
                    <div className="search-box">
-                       <span className="icon-fdj"></span>
+                       <span className="iconfont icon-fdj icon-search"></span>
                        <span className="title">搜索</span>
 
                    </div>

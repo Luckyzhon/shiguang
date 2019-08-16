@@ -13,33 +13,9 @@ class index extends Component {
                  <div className="item">
                      <div className="user-img"></div>
                      <div className="user-name">PingFang</div>
-                     <div className="left-icon"></div>
+                     <div className="iconfont icon-next left-icon"></div>
                  </div>
-                 <div className="item">
-                     <div className="user-img"></div>
-                     <div className="user-name">PingFang</div>
-                     <div className="left-icon"></div>
-                 </div>
-                 <div className="item">
-                     <div className="user-img"></div>
-                     <div className="user-name">PingFang</div>
-                     <div className="left-icon"></div>
-                 </div>
-                 <div className="item">
-                     <div className="user-img"></div>
-                     <div className="user-name">PingFang</div>
-                     <div className="left-icon"></div>
-                 </div>
-                 <div className="item">
-                     <div className="user-img"></div>
-                     <div className="user-name">PingFang</div>
-                     <div className="left-icon"></div>
-                 </div>
-                 <div className="item">
-                     <div className="user-img"></div>
-                     <div className="user-name">PingFang</div>
-                     <div className="left-icon"></div>
-                 </div>
+             
                  </div>
                  </BScroll>
             </>

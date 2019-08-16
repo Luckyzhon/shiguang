@@ -42,6 +42,12 @@
         top: 0;
       }
       .icon-fdj {
+        width:.14rem;
+        height:.14rem;
+        font-size: .14rem;
+        position:absolute;
+        left: .15rem;
+        line-height: .30rem;
       }
     }
   }
@@ -106,7 +112,9 @@
       .left-icon {
         width: 0.12rem;
         height: 0.21rem;
-        background-color: #fff;
+        color: #68CECE;
+        font-size: .21rem;
+        font-weight: 500;
       }
     }
   }

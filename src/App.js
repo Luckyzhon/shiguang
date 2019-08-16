@@ -48,7 +48,7 @@ const AppPanel = () =>{
                         return <Redirect to="/home"/>
                     }}/>
                     <Route path='/home' exact component={Home} />
-                    <Route path='/search/:id' exact component={Search} />
+                    <Route path='/search/:name' component={Search} />
                     <Route path='/article' exact component={Article} />
                     <Route path='/mine' exact component={Mine} />
                     <Route path='/login' exact component={Login}/>
@@ -65,7 +65,6 @@ const AppPanel = () =>{
 
                 {/* 发现 */}
                 {/* 菜谱 */}
-                <Route path='/menu/:id' component={Search}/>
                 {/* 菜谱子路由 */}
              
 

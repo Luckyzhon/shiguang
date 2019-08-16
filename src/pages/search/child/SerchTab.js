@@ -5,9 +5,9 @@ import {NavLink} from "react-router-dom";
 class SerchTab extends Component {
     state ={
         tab:[
-            {id:1,path:"/search/1",name:"菜谱"},
-            {id:2,path:"/search/2",name:"百科"},
-            {id:3,path:"/search/3",name:"用户"}
+            {id:1,path:"/search/menu",name:"菜谱"},
+            {id:2,path:"/search/cyclopedia",name:"百科"},
+            {id:3,path:"/search/user",name:"用户"}
         ]
     }
     render() {

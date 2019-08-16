@@ -16,11 +16,9 @@ class Search extends Component {
             <div id="search">
                 <From />
                 <Tab />
-                <Switch>
-                    <Route path="/search/1" component={Menu} />
-                    <Route path="/search/2" component={Cyclopedia} />
-                    <Route path="/search/3" component={User} />
-                </Switch>
+                    <Route path="/search/menu" component={Menu} />
+                    <Route path="/search/cyclopedia" component={Cyclopedia} />
+                    <Route path="/search/user" component={User} />
             </div>
         );
     }
