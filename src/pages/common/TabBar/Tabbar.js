@@ -13,7 +13,7 @@ class Tabbar extends Component {
     }
     render() {
         return (
-            <div>
+            <>
                 <footer id="footer">
                     
                     <ul className="tabbar">
@@ -23,7 +23,7 @@ class Tabbar extends Component {
                        
                     </ul>
                 </footer>
-            </div>
+            </>
         );
     }
 }

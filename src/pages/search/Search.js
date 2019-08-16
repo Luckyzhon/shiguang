@@ -21,9 +21,6 @@ class Search extends Component {
                     <Route path="/search/2" component={Cyclopedia} />
                     <Route path="/search/3" component={User} />
                 </Switch>
-
-
-
             </div>
         );
     }
