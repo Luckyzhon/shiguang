@@ -2,7 +2,7 @@ import React, {lazy, Suspense} from 'react';
 import {BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
 import {connect} from 'react-redux';
 import Loading from './pages/common/Loading/Loading';
-// import TarBar from './components/tab-bar/tab-bar';  not config yet
+import TarBar from './components/tab-bar/tab-bar';  
 
 // 组件懒加载
 
@@ -94,7 +94,7 @@ const AppPanel = () =>{
                 <Route path='/mine/setting' component={Setting}/>
                 <Route path='/mine/setting/changepassword' component={Changepassword}/>
                 <Route path='/mine/setting/cancel' component={Cancel}/>
-                {/* <Tarbar/>  未配置页面 */}
+                 <TarBar/>  
             </div>
         </Router>
     )
