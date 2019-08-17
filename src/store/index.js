@@ -1,10 +1,10 @@
 import {createStore, combineReducers, compose} from 'redux';
 
 //引入reducer模块
-
+import home from './modules/home'
 // 合并多个reducer
 const reducer = combineReducers({
-    
+    home
 });
 
 // 使用redux开发者工具

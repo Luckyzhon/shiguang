@@ -15,10 +15,7 @@
             display: block;
             text-align: center;
             &:nth-of-type(1), &:nth-of-type(2){
-                font-size: 1.75rem;
-            }
-            &:last-of-type{
-                font-size: 0.75rem;
+                font-size: 1.5rem;
             }
         }
         .nomal{
@@ -28,7 +25,7 @@
             display: none;
         }
         &.active{
-            color: #b4282d;
+            color:#68CECE;
         }
     }
 }
