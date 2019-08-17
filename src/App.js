@@ -2,7 +2,7 @@ import React, {lazy, Suspense} from 'react';
 import {BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
 import {connect} from 'react-redux';
 import Loading from './pages/common/Loading/Loading';
-// import TarBar from './components/tab-bar/tab-bar';  not config yet
+import TarBar from './components/tab-bar/tab-bar';  
 
 // 组件懒加载
 
