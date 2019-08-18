@@ -1,11 +1,19 @@
-import React from 'react';
-// import AppHeader from '../../../components/app-header';
-// import './style.scss'
+import React, { Component } from 'react'
+import AppHeader from '../../../components/app-header/app-header';
+import './style.scss'
 
-const Screen = (props)=>{
-    return(
-        <h1>筛选</h1>
-    )
+export default class screen extends Component {
+    render() {
+        return (
+            <div className="page subpage" id="scree">
+               <AppHeader title="食光" right="筛选" left={
+                <span className="iconfont icon-arrow-right
+                "></span>
+            } leftClick={this.props.history.goBack}/>
+            </div>
+        )
+    }
 }
 
-export default Screen;
+
+
