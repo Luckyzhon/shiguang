@@ -1,0 +1,62 @@
+#login-by-email {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 10;
+    background: url(../../images/loginbg.jpg);
+    .app-header {
+        height: 2.75rem;
+        width: 100%;
+        text-align: center;
+        background: #DEDEDD;
+        line-height: 4rem;
+        font-size: 1.125rem;
+    }
+    .inputbox {
+        width: 18.75rem;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: 10rem;
+        input::-webkit-input-placeholder {
+            color: #C8C7C7;
+        }
+        input {
+            display: block;
+            width: 18.75rem;
+            height: 2.9375rem;
+            border-radius: .3125rem;
+            padding-left: .9375rem;
+            box-sizing: border-box;
+            margin-bottom: .625rem;
+        }
+        .login {
+            background: #68CECE;
+            color: #fff;
+            font-size: 1.125rem;
+            width: 18.75rem;
+            border: none;
+            height: 2.9375rem;
+            border-radius: .3125rem;
+        }
+        .explain {
+            color: #fff;
+            font-size: 1rem;
+            display: block;
+            margin-top: 2.125rem;
+            text-align: center;
+        }
+    }
+    .toLoginin {
+        width: 10.75rem;
+        color: #fff;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        bottom: 5.75rem;
+        font-size: .8rem;
+        text-align: center;
+    }
+}
