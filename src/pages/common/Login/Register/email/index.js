@@ -15,7 +15,8 @@ const RegisterByEmail = ()=>{
                 <button className="login">登陆</button>
                 <span className="explain">一经注册，代表您同意食光的隐私政策</span>
             </div>
-            <Link className="toLoginin">已经有食光的账号了？  登录</Link>
+            <Link className="toLoginin"
+            to="/login/email">已经有食光的账号了？  登录</Link>
         </div>
     )
 }

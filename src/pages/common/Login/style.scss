@@ -29,7 +29,8 @@
         right: 0;
         margin: 0 auto;
         top: 20.3125rem;
-        a {
+        text-align: center;
+        div {
             display: block;
             color: #fff;
             font-size: 1rem;
@@ -69,7 +70,7 @@
         }
         .toLoginin {
             width: 10.75rem;
-            display: block;
+            display: inline-block;
             text-align: center;
             margin-top: 1.5625rem;
             font-size: .8rem;
