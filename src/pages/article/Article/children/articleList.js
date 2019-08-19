@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class ArticleList extends Component {
 
     render() {
-        let {title,descript,img,history} = this.props;
+        let {title,descript,img} = this.props;
         return (
             <div  className="item-wrap">
           

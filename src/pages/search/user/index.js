@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import BScroll from "../../common/app-scroll/app-scroll";
+import AppScroll from '../../../components/app-scroll/app-scroll'
 
 class index extends Component {
     render() {
         return (
          
             <>
-               <BScroll className="bsscroll">
+               <AppScroll className="bsscroll">
                    <div className="user" >
 
                   
@@ -17,7 +17,7 @@ class index extends Component {
                  </div>
              
                  </div>
-                 </BScroll>
+                 </AppScroll>
             </>
       
         );
