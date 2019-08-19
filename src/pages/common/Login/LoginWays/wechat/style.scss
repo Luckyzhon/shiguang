@@ -1,0 +1,129 @@
+#login-by-wechat {
+    height: 100%;
+    z-index: 10;
+    .close {
+        margin-top: 2.125rem;
+        margin-left: 1.375rem;
+        color: #333333;
+        font-size: 1.125rem;
+    }
+    .apply {
+        margin-top: 3.125rem;
+        margin-left: 1.625rem;
+        .logo {
+            display: flex;
+            height: 1.5rem;
+            line-height: 1.5rem;
+            img {
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+            span {
+                margin-left: .6875rem;
+                color: #333333;
+                font-size: .875rem;
+            }
+        }
+        .text {
+            margin-top: 1.125rem;
+            width: 19.125rem;
+            font-size: 1.375rem;
+            color: #333333;
+        }
+        .notify {
+            margin-top: 3.3125rem;
+            font-size: .875rem;
+            color: #999999;
+        }
+        ul {
+            margin-top: .875rem;
+            border-top: 1px solid #E4E4E4;
+            li {
+                border-bottom: 1px solid #E4E4E4;
+            }
+            .userinfo {
+                width: 100%;
+                height: 4.125rem;
+                display: flex;
+                justify-content: space-between;
+                .usermessage {
+                    width: 100%;
+                    height: 4.125rem;
+                    line-height: 4.125rem;
+                    display: flex;
+                    align-items: center;
+                    img {
+                        width: 3rem;
+                        height: 3rem;
+                        vertical-align: middle;
+                        margin-right: .625rem;
+                    }
+                    .otherinfo {
+                        height: 3rem;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        .name {
+                            height: 1rem;
+                            line-height: 1rem;
+                            color: #333333;
+                            font-size: 1rem;
+                        }
+                        .info {
+                            height: .8125rem;
+                            line-height: .8125rem;
+                            color: #999999;
+                            font-size: .8125rem;
+                        }
+                    }
+                }
+                .click {
+                    margin: auto 0;
+                    margin-right: 3rem;
+                    width: 1rem;
+                    height: .6875rem;
+                    img {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            .add {
+                width: 100%;
+                height: 4.1875rem;
+                line-height: 4.1875rem;
+                img {
+                    width: 1rem;
+                    height: 1rem;
+                    margin-right: 1.6875rem;
+                }
+                span {
+                    color: #333333;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    .buttonbox {
+        margin: 4.6875rem auto 0;
+        width: 11.5rem;
+        button {
+            width: 100%;
+            height: 2.5rem;
+            text-align: center;
+            font-size: 1.125rem;
+            border: none;
+            border-radius: .3125rem;
+        }
+        .agree {
+            background: #05C160;
+            color: #fff;
+            margin-bottom: .9375rem;
+        }
+        .reject {
+            background: #EDEDED;
+            color: #05C160;
+        }
+    }
+}

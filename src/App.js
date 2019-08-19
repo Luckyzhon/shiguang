@@ -4,13 +4,15 @@ import {connect} from 'react-redux';
 import Loading from './pages/common/Loading/Loading';
 import TabBar from './components/tab-bar/tab-bar'
 
+
 // 组件懒加载
 
 //root
+const StartUp = lazy(()=>import('./pages/startup'));
 const Home = lazy(()=>import('./pages/home/Home/Home'));
 const Article = lazy(()=>import('./pages/article/Article/article'));
 const Mine = lazy(()=>import('./pages/mine/mine'));
-const Login = lazy(()=>import('./pages/common/Login/Login'));
+const Login = lazy(()=>import('./pages/common/Login'));
 //common
 const Collect = lazy(()=>import('./pages/common/Collect/collect'));
 const FoodDetail = lazy(()=>import('./pages/common/Detail/foodDetail'));
@@ -22,7 +24,9 @@ const NotFind = lazy(()=>import('./pages/common/NotFind/NotFind'));
 
 //first children page
 const Search = lazy(()=>import('./pages/search/Search'));
-
+const LoginByEmail = lazy(()=>import('./pages/common/Login/LoginWays/email'))
+const LoginByQQ = lazy(()=>import('./pages/common/Login/LoginWays/qq'))
+const LoginByWeChat = lazy(()=>import('./pages/common/Login/LoginWays/wechat'))
 
 //second children page
 
@@ -30,6 +34,9 @@ const ArticleDetail = lazy(()=>import('./pages/article/Article/children/articleD
 const Myinfo = lazy(()=>import('./pages/mine/myinfo/myinfo'));
 const News = lazy(()=>import('./pages/mine/news/news'));
 const Setting = lazy(()=>import('./pages/mine/setting/setting'));
+const RegisterByEmail = lazy(()=>import('./pages/common/Login/Register/email'))
+
+
 
 //third children page
 const Cancel = lazy(()=>import('./pages/mine/setting/children/cancel'));
@@ -47,11 +54,12 @@ const AppPanel = () =>{
                     <Route path='/' exact render={()=>{
                         return <Redirect to="/home"/>
                     }}/>
+                    <Route path="/login" exact component={Login} />
+                    <Route path='/startup' exact component={StartUp} />
                     <Route path='/home' exact component={Home} />
                     <Route path='/search/:name' component={Search} />
                     <Route path='/article' exact component={Article} />
                     <Route path='/mine' exact component={Mine} />
-                    <Route path='/login' exact component={Login}/>
                     <Route component={NotFind} />
                 </Switch>
                 {/* children */}
@@ -88,7 +96,14 @@ const AppPanel = () =>{
                 <Route path='/mine/setting/cancel' component={Cancel}/>
                 {/* 未配置页面 */}
                 
-                <TabBar/>
+               
+                {/* 登陆 */}
+                <Route path='/login/email' component={LoginByEmail}/>
+                <Route path='/register/email' component={RegisterByEmail}/>
+                <Route path='/login/qq' component={LoginByQQ}/>
+                <Route path='/login/wechat' component={LoginByWeChat}/>
+
+                 <TabBar/>
             </div>
         </Router>
     )

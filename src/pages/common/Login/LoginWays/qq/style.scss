@@ -1,0 +1,125 @@
+#login-by-qq {
+    width: 100%;
+    height: 100%;
+    background: #EBEDF6;
+    z-index: 10;
+    .app-header {
+        height: 2.75rem;
+        width: 100%;
+        text-align: center;
+        line-height: 4rem;
+        font-size: 1.125rem;
+    }
+    .content {
+        position: relative;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: 4.25rem;
+        width: 21.75rem;
+        .logo {
+            width: 100%;
+            height: 16.8125rem;
+            background: url(../../images/qqbg.png);
+            background-size: 100%;
+            text-align: center;
+            line-height: 16.8125rem;
+            position: relative;
+            img {
+                display: inline-block;
+                width: 3.5rem;
+                height: 3.5rem;
+            }
+        }
+        .login {
+            width: 100%;
+            box-sizing: border-box;
+            padding-left: 1.3125rem;
+            background: #FFFFFF;
+            border-radius: 0 0 .625rem .625rem;
+            .userlogin {
+                width: 100%;
+                height: 3.75rem;
+                border-bottom: 1px solid #E4E4E4;
+                display: flex;
+                justify-content: space-between;
+                .account {
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    span {
+                        display: block;
+                    }
+                    .username {
+                        color: #333333;
+                        font-size: 1.125rem;
+                    }
+                    .useraccount {
+                        color: #999999;
+                        font-size: .875rem;
+                    }
+                }
+                .userinfo {
+                    height: 100%;
+                    line-height: 3.75rem;
+                    display: flex;
+                    margin-right: 1.8125rem;
+                    align-items: center;
+                    .photo {
+                        width: 2.5rem;
+                        height: 2.5rem;
+                        margin-right: .9375rem;
+                    }
+                    .arrow {
+                        width: .875rem;
+                        height: .5625rem;
+                    }
+                }
+            }
+            .adduser {
+                width: 100%;
+                height: 3.375rem;
+                line-height: 3.375rem;
+                span {
+                    font-size: 1.125rem;
+                    color: #40A0FF;
+                }
+            }
+        }
+    }
+    .notify {
+        width: 21.75rem;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        bottom: 6.75rem;
+        p {
+            color: #333333;
+            font-size: .875rem;
+            margin-bottom: .75rem;
+        }
+        li {
+            list-style: disc;
+            color: #999999;
+            font-size: .8125rem;
+            margin-left: 1rem;
+            margin-bottom: .5625rem;
+        }
+    }
+    button {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        bottom: 3.0625rem;
+        width: 21.75rem;
+        height: 2.75rem;
+        background: #00ACED;
+        color: #fff;
+        font-size: 1.0625rem;
+        border: none;
+        text-align: center;
+    }
+}
