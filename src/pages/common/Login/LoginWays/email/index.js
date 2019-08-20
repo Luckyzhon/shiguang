@@ -46,11 +46,7 @@ class LoginByEmail extends Component{
 // const mapStateToProps = (state) => ({
 //     LoginByEmailAction(account, password){
 //         if(!(/\w+@[a-z0-9]+\.[a-z]{2,4}/)){
-<<<<<<< HEAD
-//             aalert('格式不正确!')
-=======
 //             alert('格式不正确!')
->>>>>>> 32bb2ef91bcb4cda44b4285de430eb46aeb212f7
 //             return;
 //         }
 //         let action = requestLoginByEmail(account, password);
