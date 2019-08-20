@@ -2,11 +2,14 @@ import React from 'react';
 import './style.scss';
 import AppHeader from '../../../../../components/app-header/app-header';
 
-const LoginByQQ = ()=>{
+const LoginByQQ = (props)=>{
     return (
         <div className="page" id="login-by-qq">
-            <AppHeader title={'QQ一键登录'} left/>
-            {/* 缺箭头 */}
+            <AppHeader title={'QQ一键登录'} 
+            left={<i className="iconfont icon-arrow-right"></i>}
+            leftClick={
+                ()=>{props.history.push('/login');}
+            }/>
             <div className="content">
                 <div className="logo">
                     <img src="/images/login/logo.png"/>

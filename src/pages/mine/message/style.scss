@@ -1,0 +1,24 @@
+#message{
+    .content{
+        text-align: center;
+        position: relative;
+        margin-top: 200px;
+        .title{
+            width: 142px;
+            font-size: 23px;
+            font-family: PingFang-SC-Bold;
+            font-weight: bold;
+            color: rgba(51,51,51,1);
+            margin: 0 auto 40px;
+        }
+        .message{
+            font-size: 16px;
+            font-family: PingFang-SC-Medium;
+            font-weight: 500;
+            color: rgba(153,153,153,1);
+            width: 191px;
+            display: inline-block;
+            margin: 0 auto;
+        }
+    }
+}

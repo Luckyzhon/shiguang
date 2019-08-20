@@ -1,10 +1,15 @@
 import React from 'react';
 import './style.scss';
 
-const LoginByWeChat = ()=>{
+
+const LoginByWeChat = (props)=>{
+    
     return (
         <div className="page" id="login-by-wechat">
-            <p className="close">关闭</p>
+            <p className="close"
+            onClick={()=>{
+                props.history.push('/login');
+            }}>关闭</p>
             <div className="apply">
                 <div className="logo">
                     <img src="/images/login/logo.png"/>
