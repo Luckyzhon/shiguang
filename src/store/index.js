@@ -4,12 +4,14 @@ import thunk from 'redux-thunk'
 //引入reducer模块
 import home from './modules/home'
 import article from './modules/article'
+import user from './modules/user'
 
 
 // 合并多个reducer
 const reducer = combineReducers({
     home,
-    article
+    article,
+    user
 });
 
 // 使用redux开发者工具
