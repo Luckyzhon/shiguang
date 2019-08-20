@@ -18,8 +18,8 @@ import './style.scss'
                 <AppScroll className="content">
           
                        {
-                         articleList.length>0 &&  articleList.map(item=>(
-                               <ArticleList key={item.descript} {...item}/>
+                         articleList.length>0 &&  articleList.map((item,index)=>(
+                               <ArticleList key={index} {...item} {...this.props}/>
                            ))
                        }
                 </AppScroll>
