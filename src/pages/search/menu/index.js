@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import BScroll from "../../common/app-scroll/app-scroll";
+import AppScroll from '../../../components/app-scroll/app-scroll'
 class index extends Component {
     render() {
         return (
             
             <div className="menu">
-               <BScroll className="bsscroll">
+               <AppScroll className="bsscroll">
                 <ul>
                     
                     <li>
@@ -46,7 +46,7 @@ class index extends Component {
                     </li>
                  
                 </ul>
-                </BScroll>
+                </AppScroll>
             </div>
             
         );

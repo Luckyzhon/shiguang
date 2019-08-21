@@ -2,7 +2,8 @@ import React, {lazy, Suspense} from 'react';
 import {BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
 import {connect} from 'react-redux';
 import Loading from './pages/common/Loading/Loading';
-import TarBar from './components/tab-bar/tab-bar';
+import TabBar from './components/tab-bar/tab-bar'
+
 
 // 组件懒加载
 
@@ -43,7 +44,7 @@ const Cancel = lazy(()=>import('./pages/mine/setting/children/cancel'));
 const Changepassword = lazy(()=>import('./pages/mine/setting/children/changepassword'));
 
 //this is footer Navtive
-const Tarbar = lazy(()=>import('./pages/common/TabBar/Tabbar'));
+// const TarBar = lazy(()=>import('./pages/common/TabBar/Tabbar'));
 
 const AppPanel = () =>{
     return(
@@ -74,10 +75,6 @@ const AppPanel = () =>{
                 {/* 发现 */}
                 {/* 菜谱 */}
                 {/* 菜谱子路由 */}
-             
-
-
- 
 
                 {/* 文章 */}
                 {/* 文章内容 */}
@@ -102,7 +99,7 @@ const AppPanel = () =>{
                 <Route path='/login/qq' component={LoginByQQ}/>
                 <Route path='/login/wechat' component={LoginByWeChat}/>
 
-                <Tarbar/>
+                 <TabBar/>
             </div>
         </Router>
     )
