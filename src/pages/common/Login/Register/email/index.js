@@ -1,9 +1,11 @@
 import React, {Component} from 'react';
+import {connect} from 'react-redux';
+import AppHeader from '../../../../../components/app-header/app-header';
 import {Link} from 'react-router-dom';
 import { Toast } from 'antd-mobile';
 import 'antd-mobile/lib/toast/style/css'; 
 import './style.scss';
-import AppHeader from '../../../../../components/app-header/app-header';
+import {requestRegisterByEmailAction} from '../../../../../store/modules/user'
 
 class RegisterByEmail extends Component{
     state = {
@@ -30,7 +32,7 @@ class RegisterByEmail extends Component{
                     value={password} onChange={this.setPasswordAction}
                     />
                     <button className="login"
-                    onClick={this.loginAction}>登陆</button>
+                    onClick={this.loginAction}>注册</button>
                     <span className="explain">一经注册，代表您同意食光的隐私政策</span>
                 </div>
                 <Link className="toLoginin"
@@ -60,9 +62,20 @@ class RegisterByEmail extends Component{
             Toast.info('邮箱格式不正确', 1.5);
             return
         }
-        // let action = requestRegisterByEmail
+        this.props.requestRegisterByEmail(email, nickname, password);
     }
 };
 
+const mapStateToProps = (state) => ({
 
-export default RegisterByEmail;
+})
+
+const mapDispatchToProps = (dispatch) => ({
+    requestRegisterByEmail(email, nickname, password){
+        let action = requestRegisterByEmailAction(email, nickname, password);
+        dispatch(action);
+    }
+})
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(RegisterByEmail);

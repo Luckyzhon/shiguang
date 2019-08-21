@@ -27,12 +27,16 @@ export default (state = initialState, action)=>{
 
 
 //请求登陆
-export const requestLoginByEmail = (account, password) => async(dispatch) => {
-    try{
-        await post(api.LOGIN_BY_PASSWORD_API, {account, password});
+export const requestLoginByEmailAction = (account, password) => async(dispatch) => {
+    // try{
+    //     await post(api.LOGIN_BY_PASSWORD_API, {account, password});
         
-    }catch(error){
-        console.log('登录失败');
-    }
+    // }catch(error){
+    //     console.log('登录失败');
+    // }
 }
 
+export const requestRegisterByEmailAction = (email, nickname, password) => async(dispatch) => {
+    let response = await post(api.REGISTER_BY_EMAIL_API, {email, nickname, password});
+    console.log(response);
+}

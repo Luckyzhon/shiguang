@@ -1,6 +1,10 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
+import { connect } from 'react-redux';
 import './style.scss';
+import { Toast } from 'antd-mobile';
+import 'antd-mobile/lib/toast/style/css';
+
 import AppHeader from '../../../../../components/app-header/app-header';
 
 class LoginByEmail extends Component{
@@ -43,15 +47,18 @@ class LoginByEmail extends Component{
     }
 };
 
-// const mapStateToProps = (state) => ({
-//     LoginByEmailAction(account, password){
-//         if(!(/\w+@[a-z0-9]+\.[a-z]{2,4}/)){
-//             aalert('格式不正确!')
-//             return;
-//         }
-//         let action = requestLoginByEmail(account, password);
-//         dispatch(action);
-//     }
-// })
+const mapStateToProps = (state) => ({
+    // LoginByEmailAction(account, password){
+    //     if(!(/\w+@[a-z0-9]+\.[a-z]{2,4}/)){
+    //         Toast.info('格式不正确!', 1.5);
+    //         return;
+    //     }
+    //     let action = requestLoginByEmail(account, password);
+    //     dispatch(action);
+    // }
+});
+const mapDispatchToProps = (dispatch) => ({
 
-export default LoginByEmail;
+})
+
+export default (mapStateToProps, mapDispatchToProps)(LoginByEmail);

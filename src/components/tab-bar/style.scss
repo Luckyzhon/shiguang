@@ -1,4 +1,4 @@
-.tab-bar{
+.tab-bar {
     width: 100%;
     height: 3.0625rem;
     position: absolute;
@@ -6,26 +6,27 @@
     bottom: 0;
     display: flex;
     background: #fafafa;
-    .tab-item{
+    .tab-item {
         flex: 1;
         display: flex;
         flex-direction: column;
         color: #666;
-        span{
+        span {
             display: block;
             text-align: center;
-            &:nth-of-type(1), &:nth-of-type(2){
+            &:nth-of-type(1),
+            &:nth-of-type(2) {
                 font-size: 1.5rem;
             }
         }
-        .nomal{
+        .nomal {
             display: block;
         }
-        .select{
+        .select {
             display: none;
         }
-        &.active{
-            color:#68CECE;
+        &.active {
+            color: #68CECE;
         }
     }
 }

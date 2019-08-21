@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import './style.scss';
-import { Toast } from 'antd-mobile';
-import 'antd-mobile/lib/toast/style/css';
 
 
 class Login extends Component{
