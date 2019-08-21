@@ -7,7 +7,7 @@ export default class screen extends Component {
     state={
         isshow:false
     }
-    render() {
+    render() {    
         return (
             <div className="page subpage" id="scree">
                <AppHeader title="食光" right="筛选" left={

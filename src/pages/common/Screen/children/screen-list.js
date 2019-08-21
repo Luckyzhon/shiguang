@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './style.scss'
 import AppScroll from '../../../../components/app-scroll/app-scroll'
 class ScreenList extends Component {
+    
     state={
         list:[
             {id: 1, name: "饮食类型"},
@@ -9,16 +10,19 @@ class ScreenList extends Component {
             {id: 3, name: "常见食材"},
             {id: 4, name: "其他"}
         ],
-        ischecked:false
-    }
+        ischecked:false,
+               
+    } 
     render() {
+        let {history} = this.props;
+        
         return (
             
             <div className="page" id="screenlist">
             <AppScroll>
                <div className="screenlist-header">
                 <h3>
-                    <span>筛选</span><span>完成</span>
+                    <span>筛选</span><span >完成</span>
                 </h3>
                </div>
                <div className="screenlist-hot">
@@ -47,6 +51,7 @@ class ScreenList extends Component {
             ischecked:!this.state.ischecked
         })
     }
+
 }
 
 export default ScreenList;

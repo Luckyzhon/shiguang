@@ -2,10 +2,12 @@
     color: #ffffff;
     .home-list-con{
         .box{
+            
             position: absolute;
             left: 1.25rem;
             p:nth-of-type(1){
                  font-size: 1rem;
+                 width: 7.5rem;
                  display: block;
                  margin-top: 7.0625rem;
                  margin-bottom: .375rem;
@@ -15,8 +17,9 @@
 
             }
             img{
+                display: inline-block;
                margin-left: 16.1875rem;
-               margin-top: 7.6875rem;
+               margin-top: -2.5rem;
             }
 
         }

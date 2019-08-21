@@ -25,7 +25,7 @@ class Home extends Component {
                 }} />
               
                 <AppScroll className="content">
-                <div className="home-header">
+                <div className="home-header" >
                  <img src="/images/Home.jpg" alt/>
                    <div className="home-box">
                      <h3>食谱</h3>
@@ -35,10 +35,10 @@ class Home extends Component {
                    </div>
 
               </div>
-              <div className="home-con">
+              <div className="home-con" >
               {
                           list.map(item=>(
-                                <HomeList key={item.id} {...item}/>
+                                <HomeList key={item.id} {...item} {...this.props}/>
                           ))
                     }
               </div>
@@ -49,6 +49,7 @@ class Home extends Component {
             </div>
         )
     }
+
 }
 const mapSatateToProps  = ()=>({
    

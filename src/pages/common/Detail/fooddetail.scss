@@ -1,0 +1,72 @@
+#fooddetail{
+    color: #666666;
+    .iconfont{
+        font-weight: bold;
+        font-size: 1.6875rem;
+        color: #999999;
+    }
+    .fooddetail-con{
+        margin-top: 2.75rem;
+        .banner{
+            .banner-box{
+                position: absolute;
+                top: 24.3125rem;
+                left: 1.375rem;
+                color: #ffffff;
+                p{
+                    font-size: 20px; 
+                    display:block;
+                    width: 4rem;
+                    border-bottom: .1875rem solid #ffffff;                    
+                }
+                h3{
+                    margin-top: .625rem;
+                    font-size: 1.5625rem;
+                    display: block;
+                    width: 15.4375rem;
+                }
+            }
+
+        }
+        .fooddetail-wrap{
+            height: 3.0625rem;
+            text-align: center;
+            line-height: 49px;
+            color: #666666;
+            border-bottom: 1px solid #666666;
+            i{
+                color: #68CECE;
+                font-size: 1.3125rem;
+
+                span{
+                    font-weight: normal;
+                    color: #666666;
+                    font-size: 14px;
+                    margin-right: .9375rem;
+                }
+            }
+
+        }
+        .fooddetail-foot{
+            .fooddetail-foot-header{
+                justify-content: center;
+                p{
+                    display: block;
+                    margin-top: 1rem;
+                    margin-bottom: 1.25rem;
+                }
+            }
+            padding: 0 3.0625rem;
+            margin-top: 1.5625rem;
+            font-size: .75rem;
+            span ,h3 {
+                line-height: 1.875rem;
+            }
+            h3{
+                font-size: .875rem;
+                color: #303030;
+                font-weight: bold;
+            }
+        }
+    }
+}

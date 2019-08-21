@@ -60,8 +60,7 @@ const AppPanel = () =>{
                     <Route path='/search/:name' component={Search} />
                     <Route path='/article' exact component={Article} />
                     <Route path='/mine' exact component={Mine} />
-                    <Route component={NotFind} />
-                </Switch>
+
                 {/* children */}
                 {/* 首页 */}
                 {/* 筛选 */}
@@ -98,7 +97,8 @@ const AppPanel = () =>{
                 <Route path='/register/email' component={RegisterByEmail}/>
                 <Route path='/login/qq' component={LoginByQQ}/>
                 <Route path='/login/wechat' component={LoginByWeChat}/>
-
+                <Route component={NotFind} />
+                </Switch>
                  <TabBar/>
             </div>
         </Router>

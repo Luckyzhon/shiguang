@@ -8,9 +8,9 @@ export default class HomeList extends Component {
             <div className="home-wrap">
                 <div className="home-list-con">
                    <div className="box">
-                    <p>{title}</p>
+                    <p onClick={this.changeFoodAction}>{title}</p>
                     <p>{author}</p>
-                    <img src={imgurl} alt=""/>
+                    <img src={imgurl} alt="" onClick={this.intoUserdetailAction}/>
                    </div>
                   <img src={url} alt=""/>  
                   
@@ -18,5 +18,13 @@ export default class HomeList extends Component {
                 
             </div>
         )
+    }
+    intoUserdetailAction=()=>{
+        console.log('执行了');
+        
+        this.props.history.push('/home/userinfo');
+    }
+    changeFoodAction=()=>{
+        this.props.history.push('/home/detail');
     }
 }
