@@ -11,7 +11,7 @@ import TabBar from './components/tab-bar/tab-bar'
 const StartUp = lazy(()=>import('./pages/startup'));
 const Home = lazy(()=>import('./pages/home/Home/Home'));
 const Article = lazy(()=>import('./pages/article/Article/article'));
-const Mine = lazy(()=>import('./pages/mine/mine'));
+const Mine = lazy(()=>import('./pages/mine'));
 const Login = lazy(()=>import('./pages/common/Login'));
 //common
 const Collect = lazy(()=>import('./pages/common/Collect/collect'));
@@ -27,13 +27,14 @@ const Search = lazy(()=>import('./pages/search/Search'));
 const LoginByEmail = lazy(()=>import('./pages/common/Login/LoginWays/email'))
 const LoginByQQ = lazy(()=>import('./pages/common/Login/LoginWays/qq'))
 const LoginByWeChat = lazy(()=>import('./pages/common/Login/LoginWays/wechat'))
+const MineMessage = lazy(()=>import('./pages/mine/message'))
 
 //second children page
 
 const ArticleDetail = lazy(()=>import('./pages/article/Article/children/articleDetail'));
 const Myinfo = lazy(()=>import('./pages/mine/myinfo/myinfo'));
 const News = lazy(()=>import('./pages/mine/news/news'));
-const Setting = lazy(()=>import('./pages/mine/setting/setting'));
+const Setting = lazy(()=>import('./pages/mine/setting'));
 const RegisterByEmail = lazy(()=>import('./pages/common/Login/Register/email'))
 
 
@@ -90,8 +91,7 @@ const AppPanel = () =>{
                 <Route path='/mine/setting/changepassword' component={Changepassword}/>
                 <Route path='/mine/setting/cancel' component={Cancel}/>
                 {/* 未配置页面 */}
-                
-               
+                <Route path='/mine/message' component={MineMessage}/>
                 {/* 登陆 */}
                 <Route path='/login/email' component={LoginByEmail}/>
                 <Route path='/register/email' component={RegisterByEmail}/>

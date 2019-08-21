@@ -1,11 +1,28 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-// import { Modal } from 'antd-mobile';
 import './style.scss';
-// import 'antd-mobile/lib/modal/style/css';
+import { Toast } from 'antd-mobile';
+import 'antd-mobile/lib/toast/style/css';
+
 
 class Login extends Component{
+    state={
+        authorization: '',
+        way:'',
+        coverToggle: false,
+    };
     render(){
+        let dom = (
+            <div className="cover">
+                <p>“食光”想要打开“{this.state.authorization}”</p>
+                <span className="border-top border-right"
+                onClick={()=>this.coverToggleAction()}
+                >暂不</span>
+                <span className="border-top border-left"
+                onClick={()=>{this.pushRouter()}}
+                >注册</span>
+            </div>
+        );
         return (
             <div className="page" id="login">
                 <Link className="skip"
@@ -23,26 +40,47 @@ class Login extends Component{
                         <i className="icon"></i>QQ登陆
                     </div>
                     <div className="email"
-                    onClick={this.loginByEmail.bind(this)}>使用邮箱注册</div>
-                    <span className="toLoginin">已经有食光的账号了？  登录</span>
+                    onClick={this.registerByEmail.bind(this)}>使用邮箱注册</div>
+                    <span className="toLoginin"
+                    onClick={this.loginByEmail.bind(this)}
+                    >已经有食光的账号了？  登录</span>
                     <span className="explain">一经注册，代表您同意食光的隐私政策</span>
                 </div>
+                {this.state.coverToggle && dom}
             </div>
         )
     };
     loginByWeChat(){
-        // alert('“食光”想要打开“微信”', [
-        //     { text: '暂不', onPress: () => {} },
-        //     { text: '注册', onPress: () => this.props.history.push('/login/wechat') },
-        //   ])
-        this.props.history.push('/login/wechat');
+        // this.props.history.push('/login/wechat');
+        this.setState({
+            authorization: '微信',
+            way: 'wechat',
+            coverToggle: true
+        })
     };
     loginByQQ(){
-        this.props.history.push('/login/qq');
+        // this.props.history.push('/login/qq');
+        this.setState({
+            authorization: 'QQ',
+            way: 'qq',
+            coverToggle: true
+        })
     };
     loginByEmail(){
-        this.props.history.push('/register/email');
+        this.props.history.push('/login/email');
     };
+    registerByEmail(){
+        this.props.history.push('/register/email')
+    };
+    coverToggleAction(){
+        this.setState({
+            coverToggle: false,
+        })
+    };
+    pushRouter(){
+        let path = '/login/'+this.state.way
+        this.props.history.push(path);
+    }
 }
 
 export default Login;
