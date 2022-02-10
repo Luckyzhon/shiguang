@@ -35,7 +35,7 @@
         ]
     },
     "devDependencies": {
-        "node-sass": "^4.12.0"
+        "node-sass": "^7.0.0"
     },
     "proxy": "http://106.52.199.168"
 }
